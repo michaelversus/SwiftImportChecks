@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		055AFFE12DBD49420040597A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 055AFFE02DBD49420040597A /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		055AFFC32DBD48D80040597A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055AFFA92DBD48D60040597A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 055AFFB02DBD48D60040597A;
+			remoteInfo = SICDemoApp;
+		};
+		055AFFCD2DBD48D80040597A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055AFFA92DBD48D60040597A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 055AFFB02DBD48D60040597A;
+			remoteInfo = SICDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		055AFFB12DBD48D60040597A /* SICDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SICDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		055AFFC22DBD48D80040597A /* SICDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SICDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		055AFFCC2DBD48D80040597A /* SICDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SICDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		055AFFB32DBD48D60040597A /* SICDemoApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SICDemoApp;
+			sourceTree = "<group>";
+		};
+		055AFFC52DBD48D80040597A /* SICDemoAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SICDemoAppTests;
+			sourceTree = "<group>";
+		};
+		055AFFCF2DBD48D80040597A /* SICDemoAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SICDemoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		055AFFAE2DBD48D60040597A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055AFFE12DBD49420040597A /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055AFFBF2DBD48D80040597A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055AFFC92DBD48D80040597A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		055AFFA82DBD48D60040597A = {
+			isa = PBXGroup;
+			children = (
+				055AFFB32DBD48D60040597A /* SICDemoApp */,
+				055AFFC52DBD48D80040597A /* SICDemoAppTests */,
+				055AFFCF2DBD48D80040597A /* SICDemoAppUITests */,
+				055AFFB22DBD48D60040597A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		055AFFB22DBD48D60040597A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				055AFFB12DBD48D60040597A /* SICDemoApp.app */,
+				055AFFC22DBD48D80040597A /* SICDemoAppTests.xctest */,
+				055AFFCC2DBD48D80040597A /* SICDemoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		055AFFB02DBD48D60040597A /* SICDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055AFFD62DBD48D80040597A /* Build configuration list for PBXNativeTarget "SICDemoApp" */;
+			buildPhases = (
+				055AFFAD2DBD48D60040597A /* Sources */,
+				055AFFAE2DBD48D60040597A /* Frameworks */,
+				055AFFAF2DBD48D60040597A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				055AFFB32DBD48D60040597A /* SICDemoApp */,
+			);
+			name = SICDemoApp;
+			packageProductDependencies = (
+				055AFFE02DBD49420040597A /* Alamofire */,
+			);
+			productName = SICDemoApp;
+			productReference = 055AFFB12DBD48D60040597A /* SICDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		055AFFC12DBD48D80040597A /* SICDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055AFFD92DBD48D80040597A /* Build configuration list for PBXNativeTarget "SICDemoAppTests" */;
+			buildPhases = (
+				055AFFBE2DBD48D80040597A /* Sources */,
+				055AFFBF2DBD48D80040597A /* Frameworks */,
+				055AFFC02DBD48D80040597A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				055AFFC42DBD48D80040597A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				055AFFC52DBD48D80040597A /* SICDemoAppTests */,
+			);
+			name = SICDemoAppTests;
+			packageProductDependencies = (
+			);
+			productName = SICDemoAppTests;
+			productReference = 055AFFC22DBD48D80040597A /* SICDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		055AFFCB2DBD48D80040597A /* SICDemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055AFFDC2DBD48D80040597A /* Build configuration list for PBXNativeTarget "SICDemoAppUITests" */;
+			buildPhases = (
+				055AFFC82DBD48D80040597A /* Sources */,
+				055AFFC92DBD48D80040597A /* Frameworks */,
+				055AFFCA2DBD48D80040597A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				055AFFCE2DBD48D80040597A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				055AFFCF2DBD48D80040597A /* SICDemoAppUITests */,
+			);
+			name = SICDemoAppUITests;
+			packageProductDependencies = (
+			);
+			productName = SICDemoAppUITests;
+			productReference = 055AFFCC2DBD48D80040597A /* SICDemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		055AFFA92DBD48D60040597A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					055AFFB02DBD48D60040597A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					055AFFC12DBD48D80040597A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 055AFFB02DBD48D60040597A;
+					};
+					055AFFCB2DBD48D80040597A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 055AFFB02DBD48D60040597A;
+					};
+				};
+			};
+			buildConfigurationList = 055AFFAC2DBD48D60040597A /* Build configuration list for PBXProject "SICDemoApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 055AFFA82DBD48D60040597A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				055AFFDF2DBD49420040597A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 055AFFB22DBD48D60040597A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				055AFFB02DBD48D60040597A /* SICDemoApp */,
+				055AFFC12DBD48D80040597A /* SICDemoAppTests */,
+				055AFFCB2DBD48D80040597A /* SICDemoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		055AFFAF2DBD48D60040597A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055AFFC02DBD48D80040597A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055AFFCA2DBD48D80040597A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		055AFFAD2DBD48D60040597A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055AFFBE2DBD48D80040597A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055AFFC82DBD48D80040597A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		055AFFC42DBD48D80040597A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 055AFFB02DBD48D60040597A /* SICDemoApp */;
+			targetProxy = 055AFFC32DBD48D80040597A /* PBXContainerItemProxy */;
+		};
+		055AFFCE2DBD48D80040597A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 055AFFB02DBD48D60040597A /* SICDemoApp */;
+			targetProxy = 055AFFCD2DBD48D80040597A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		055AFFD42DBD48D80040597A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		055AFFD52DBD48D80040597A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		055AFFD72DBD48D80040597A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SICDemoApp/SICDemoApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SICDemoApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SICDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		055AFFD82DBD48D80040597A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SICDemoApp/SICDemoApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SICDemoApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SICDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		055AFFDA2DBD48D80040597A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SICDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SICDemoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SICDemoApp";
+			};
+			name = Debug;
+		};
+		055AFFDB2DBD48D80040597A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SICDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SICDemoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SICDemoApp";
+			};
+			name = Release;
+		};
+		055AFFDD2DBD48D80040597A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SICDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SICDemoApp;
+			};
+			name = Debug;
+		};
+		055AFFDE2DBD48D80040597A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SICDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SICDemoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		055AFFAC2DBD48D60040597A /* Build configuration list for PBXProject "SICDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055AFFD42DBD48D80040597A /* Debug */,
+				055AFFD52DBD48D80040597A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		055AFFD62DBD48D80040597A /* Build configuration list for PBXNativeTarget "SICDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055AFFD72DBD48D80040597A /* Debug */,
+				055AFFD82DBD48D80040597A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		055AFFD92DBD48D80040597A /* Build configuration list for PBXNativeTarget "SICDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055AFFDA2DBD48D80040597A /* Debug */,
+				055AFFDB2DBD48D80040597A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		055AFFDC2DBD48D80040597A /* Build configuration list for PBXNativeTarget "SICDemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055AFFDD2DBD48D80040597A /* Debug */,
+				055AFFDE2DBD48D80040597A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		055AFFDF2DBD49420040597A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		055AFFE02DBD49420040597A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055AFFDF2DBD49420040597A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 055AFFA92DBD48D60040597A /* Project object */;
+}
