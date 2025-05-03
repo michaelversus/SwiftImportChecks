@@ -21,6 +21,21 @@ jobs:
       run: swift build
     - name: Run tests
       run: swift test --enable-code-coverage
+    - name: Install llvm-cov plugin
+      run: brew install llvm
+    - name: Generate coverage report
+      run: |
+        PROF_DATA=$(find .build -name "*.profdata" | head -n 1)
+        PACKAGE_NAME="swiftimportchecks"
+        
+        xcrun llvm-cov export \
+          -format="lcov" \
+          -instr-profile=$PROF_DATA \
+          $(find .build -name "$PACKAGE_NAME") \
+          $(find .build -name "swiftimportchecks*" -type f -perm +111) \
+          --ignore-filename-regex=".build|Tests" > info.lcov
+          
+        echo "Coverage file size: $(wc -l info.lcov)"
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
       with:
