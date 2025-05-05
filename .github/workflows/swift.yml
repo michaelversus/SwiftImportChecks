@@ -20,7 +20,7 @@ jobs:
     - name: Build
       run: swift build
     - name: Run tests
-      run: swift test --enable-code-coverage
+      run: swift test --enable-code-coverage YES
     - name: Install llvm-cov plugin
       run: brew install llvm
     - name: Generate coverage report
