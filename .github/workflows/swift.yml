@@ -24,7 +24,7 @@ jobs:
     - name: Install llvm-cov plugin
       run: brew install llvm
     - name: Generate coverage report
-      run: llvm-cov export -format="lcov" .build/debug/SwiftImportChecksPackageTests.xctest -instr-profile .build/debug/codecov/default.profdata > info.lcov
+      run: llvm-cov export -format="lcov" .build/debug/SwiftImportChecksPackageTests.xctest/Contents/MacOS/SwiftImportChecksPackageTests -instr-profile .build/debug/codecov/default.profdata > info.lcov
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
       with:
