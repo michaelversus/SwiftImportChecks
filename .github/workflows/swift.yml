@@ -25,38 +25,33 @@ jobs:
       run: brew install llvm
     - name: Generate coverage report
       run: |
-      # Find the profdata file
-      PROF_DATA=$(find .build -name "*.profdata" | head -n 1)
-      echo "Found profdata at: $PROF_DATA"
-    
-      # Find the test executable
-      TEST_BINARY=$(find .build/debug -name "swiftimportchecks*Tests" -type f -perm +111 | head -n 1)
-      echo "Found test binary at: $TEST_BINARY"
-    
-      # Find the main executable
-      MAIN_BINARY=$(find .build/debug -name "swiftimportchecks" -type f -perm +111 | head -n 1)
-      echo "Found main binary at: $MAIN_BINARY"
-    
-      # Check if binaries were found
-      if [ -z "$TEST_BINARY" ] && [ -z "$MAIN_BINARY" ]; then
-        echo "Error: No executables found"
-        find .build -type f -perm +111 | grep -v ".build/.*/" | sort
-        exit 1
-      fi
-    
-      # Generate coverage using the found binaries
-      BINARIES=""
-      [ -n "$TEST_BINARY" ] && BINARIES="$BINARIES $TEST_BINARY"
-      [ -n "$MAIN_BINARY" ] && BINARIES="$BINARIES $MAIN_BINARY"
-    
-      xcrun llvm-cov export \
-        -format="lcov" \
-        -instr-profile="$PROF_DATA" \
-        $BINARIES \
-        --ignore-filename-regex=".build|Tests" > info.lcov
-    
-      echo "Coverage file size: $(wc -l info.lcov)"
-      head -n 20 info.lcov
+        # Find coverage data
+        PROF_DATA=$(find .build -name "*.profdata" | head -n 1)
+        echo "Found profdata at: $PROF_DATA"
+        
+        # List all executables to debug
+        echo "Available executables:"
+        find .build -type f -perm +111 | sort
+        
+        # Try to find Swift package executables
+        SWIFT_EXEC=$(find .build -name "swiftimportchecks*" -type f -perm +111 | head -n 1)
+        
+        if [ -n "$PROF_DATA" ] && [ -n "$SWIFT_EXEC" ]; then
+          xcrun llvm-cov export -format="lcov" -instr-profile="$PROF_DATA" "$SWIFT_EXEC" > info.lcov
+          echo "Generated coverage file size: $(wc -l info.lcov)"
+        else
+          # Alternative approach using all executables
+          echo "Trying alternative approach..."
+          EXEC_FILES=$(find .build -type f -perm +111 | grep -v "\.build/.*/")
+          
+          if [ -n "$EXEC_FILES" ]; then
+            xcrun llvm-cov export -format="lcov" -instr-profile="$PROF_DATA" $EXEC_FILES > info.lcov
+            echo "Generated coverage file size: $(wc -l info.lcov)"
+          else
+            echo "No suitable executables found for coverage generation"
+            exit 1
+          fi
+        fi
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
       with:
