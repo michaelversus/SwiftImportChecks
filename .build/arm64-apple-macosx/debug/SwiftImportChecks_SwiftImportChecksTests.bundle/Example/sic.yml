@@ -1,0 +1,15 @@
+configurations:
+  SICDemoApp:
+    excluded:
+      - .build
+      - .github
+      - .githooks
+      - .git
+      - .gitlab
+      - .swiftpm
+    excludedImports:
+        - Foundation
+excludedTargets:
+    - Tests
+excludedPackages:
+    - PackageTest

@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/master.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxParser/Diagnostic.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/Diagnostic.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/Diagnostic.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/Diagnostic~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/Diagnostic.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxParser/SyntaxParser.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/SyntaxParser.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/SyntaxParser.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/SyntaxParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/SyntaxParser.swiftdeps"
+  }
+}

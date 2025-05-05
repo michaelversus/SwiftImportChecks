@@ -1,0 +1,4 @@
+module IDEUtils {
+    header "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/IDEUtils.build/IDEUtils-Swift.h"
+    requires objc
+}

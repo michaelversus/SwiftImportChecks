@@ -1,0 +1,12 @@
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/CompositionRootTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Configuration/ConfigErrorTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Configuration/ConfigFactoryTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Configuration/ConfigurationTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Errors/ImplicitDependenciesErrorTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Extensions/StringExtensionsTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Extensions/XCodeProjError+Extension.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Mocks/FileManagerMock.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/SPMParsing/PackagesParserTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/SPMParsing/SwiftPackageFileTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/SwiftImportChecksTests.swift
+/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/DerivedSources/resource_bundle_accessor.swift

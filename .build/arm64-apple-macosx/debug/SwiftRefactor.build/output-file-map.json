@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/master.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftRefactor/AddSeparatorsToIntegerLiteral.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/AddSeparatorsToIntegerLiteral.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/AddSeparatorsToIntegerLiteral.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/AddSeparatorsToIntegerLiteral~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/AddSeparatorsToIntegerLiteral.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftRefactor/FormatRawStringLiteral.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/FormatRawStringLiteral.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/FormatRawStringLiteral.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/FormatRawStringLiteral~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/FormatRawStringLiteral.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftRefactor/IntegerLiteralUtilities.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/IntegerLiteralUtilities.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/IntegerLiteralUtilities.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/IntegerLiteralUtilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/IntegerLiteralUtilities.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftRefactor/MigrateToNewIfLetSyntax.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/MigrateToNewIfLetSyntax.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/MigrateToNewIfLetSyntax.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/MigrateToNewIfLetSyntax~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/MigrateToNewIfLetSyntax.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftRefactor/OpaqueParameterToGeneric.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/OpaqueParameterToGeneric.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/OpaqueParameterToGeneric.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/OpaqueParameterToGeneric~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/OpaqueParameterToGeneric.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftRefactor/RefactoringProvider.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/RefactoringProvider.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/RefactoringProvider.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/RefactoringProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/RefactoringProvider.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftRefactor/RemoveSeparatorsFromIntegerLiteral.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/RemoveSeparatorsFromIntegerLiteral.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/RemoveSeparatorsFromIntegerLiteral.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/RemoveSeparatorsFromIntegerLiteral~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftRefactor.build/RemoveSeparatorsFromIntegerLiteral.swiftdeps"
+  }
+}

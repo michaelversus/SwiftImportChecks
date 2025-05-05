@@ -1,0 +1,77 @@
+{
+  "": {
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/master.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/CompositionRootTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/CompositionRootTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/CompositionRootTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/CompositionRootTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/CompositionRootTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Configuration/ConfigErrorTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigErrorTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigErrorTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigErrorTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigErrorTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Configuration/ConfigFactoryTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigFactoryTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigFactoryTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigFactoryTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigFactoryTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Configuration/ConfigurationTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigurationTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigurationTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigurationTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ConfigurationTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Errors/ImplicitDependenciesErrorTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ImplicitDependenciesErrorTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ImplicitDependenciesErrorTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ImplicitDependenciesErrorTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/ImplicitDependenciesErrorTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Extensions/StringExtensionsTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/StringExtensionsTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/StringExtensionsTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/StringExtensionsTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/StringExtensionsTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Extensions/XCodeProjError+Extension.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/XCodeProjError+Extension.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/XCodeProjError+Extension.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/XCodeProjError+Extension~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/XCodeProjError+Extension.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/Mocks/FileManagerMock.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/FileManagerMock.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/FileManagerMock.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/FileManagerMock~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/FileManagerMock.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/SPMParsing/PackagesParserTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/PackagesParserTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/PackagesParserTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/PackagesParserTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/PackagesParserTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/SPMParsing/SwiftPackageFileTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/SwiftPackageFileTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/SwiftPackageFileTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/SwiftPackageFileTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/SwiftPackageFileTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/Tests/SwiftImportChecksTests/SwiftImportChecksTests.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/SwiftImportChecksTests.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/SwiftImportChecksTests.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/SwiftImportChecksTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/SwiftImportChecksTests.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/resource_bundle_accessor.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftImportChecksTests.build/resource_bundle_accessor.swiftdeps"
+  }
+}

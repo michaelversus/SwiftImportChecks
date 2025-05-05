@@ -1,0 +1,4 @@
+module ArgumentParserToolInfo {
+    header "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParserToolInfo-tool.build/ArgumentParserToolInfo-Swift.h"
+    requires objc
+}

@@ -1,0 +1,7 @@
+version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
+options: "5831cf0a1b755e2d5757ba0994ca72c3d904714125060d5abe8ab256d6c55af6"
+build_start_time: [1744824831, 446694000]
+build_end_time: [1744824832, 91244000]
+inputs:
+  ? "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo/ToolInfo.swift"
+  : [1744824826, 200663172]

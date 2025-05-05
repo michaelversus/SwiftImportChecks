@@ -1,0 +1,11 @@
+version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
+options: "c77784719bdde3b44b41b799f73d38e6b059ea6640276b9557e7f8d94c80b609"
+build_start_time: [1744824831, 446735000]
+build_end_time: [1744824834, 328645000]
+inputs:
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/AEXML/Sources/AEXML/Builders.swift": [1744824826, 331801080]
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/AEXML/Sources/AEXML/Document.swift": [1744824826, 331933913]
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/AEXML/Sources/AEXML/Element.swift": [1744824826, 332082496]
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/AEXML/Sources/AEXML/Error.swift": [1744824826, 332215580]
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/AEXML/Sources/AEXML/Options.swift": [1744824826, 332330580]
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/AEXML/Sources/AEXML/Parser.swift": [1744824826, 332442872]

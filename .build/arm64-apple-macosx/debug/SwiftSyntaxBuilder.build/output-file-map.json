@@ -1,0 +1,77 @@
+{
+  "": {
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/master.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/ConvenienceInitializers.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ConvenienceInitializers.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ConvenienceInitializers.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ConvenienceInitializers~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ConvenienceInitializers.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/HasTrailingComma.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/HasTrailingComma.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/HasTrailingComma.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/HasTrailingComma~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/HasTrailingComma.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/Indenter.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Indenter.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Indenter.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Indenter~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Indenter.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/ResultBuilderExtensions.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ResultBuilderExtensions.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ResultBuilderExtensions.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ResultBuilderExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ResultBuilderExtensions.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/Syntax+StringInterpolation.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Syntax+StringInterpolation.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Syntax+StringInterpolation.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Syntax+StringInterpolation~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Syntax+StringInterpolation.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/SyntaxNodeWithBody.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SyntaxNodeWithBody.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SyntaxNodeWithBody.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SyntaxNodeWithBody~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SyntaxNodeWithBody.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/BuildableCollectionNodes.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/BuildableCollectionNodes.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/BuildableCollectionNodes.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/BuildableCollectionNodes~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/BuildableCollectionNodes.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/BuildableNodes.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/BuildableNodes.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/BuildableNodes.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/BuildableNodes~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/BuildableNodes.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/ResultBuilders.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ResultBuilders.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ResultBuilders.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ResultBuilders~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/ResultBuilders.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/SyntaxExpressibleByStringInterpolationConformances.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SyntaxExpressibleByStringInterpolationConformances.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SyntaxExpressibleByStringInterpolationConformances.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SyntaxExpressibleByStringInterpolationConformances~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SyntaxExpressibleByStringInterpolationConformances.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/Token.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Token.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Token.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Token~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Token.swiftdeps"
+  },
+  "/Users/m.karagiorgos/SwiftImportChecks/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/Typealiases.swift": {
+    "dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Typealiases.d",
+    "object": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Typealiases.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Typealiases~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/Typealiases.swiftdeps"
+  }
+}

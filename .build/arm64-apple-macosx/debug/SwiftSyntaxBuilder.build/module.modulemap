@@ -1,0 +1,4 @@
+module SwiftSyntaxBuilder {
+    header "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder.build/SwiftSyntaxBuilder-Swift.h"
+    requires objc
+}

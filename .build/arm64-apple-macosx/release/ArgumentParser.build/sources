@@ -1,0 +1,42 @@
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Argument.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentHelp.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentVisibility.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/CompletionKind.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Errors.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Flag.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/NameSpecification.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Option.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/OptionGroup.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/AsyncParsableCommand.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandConfiguration.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandGroup.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/EnumerableFlag.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ExpressibleByArgument.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArguments.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArgumentsValidation.swift'
+'/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableCommand.swift'
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputKey.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/DumpHelpGenerator.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/CollectionExtensions.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Platform.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift
+/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift

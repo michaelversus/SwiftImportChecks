@@ -1,0 +1,217 @@
+{
+  "": {
+    "dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentParser.d",
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentParser.o",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/master.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/BashCompletionsGenerator.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/BashCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/BashCompletionsGenerator.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CompletionsGenerator.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CompletionsGenerator.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/FishCompletionsGenerator.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/FishCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/FishCompletionsGenerator.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ZshCompletionsGenerator.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ZshCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ZshCompletionsGenerator.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Argument.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Argument.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Argument~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Argument.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentHelp.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentHelp.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentHelp~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentHelp.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentVisibility.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentVisibility.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentVisibility~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentVisibility.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/CompletionKind.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CompletionKind.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CompletionKind~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CompletionKind.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Errors.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Errors.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Errors~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Errors.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Flag.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Flag.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Flag~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Flag.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/NameSpecification.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/NameSpecification.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/NameSpecification~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/NameSpecification.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Option.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Option.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Option~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Option.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/OptionGroup.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/OptionGroup.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/OptionGroup~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/OptionGroup.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/AsyncParsableCommand.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/AsyncParsableCommand.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/AsyncParsableCommand~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/AsyncParsableCommand.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandConfiguration.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandConfiguration.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandConfiguration.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandGroup.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandGroup.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandGroup~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandGroup.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/EnumerableFlag.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/EnumerableFlag.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/EnumerableFlag~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/EnumerableFlag.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ExpressibleByArgument.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ExpressibleByArgument.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ExpressibleByArgument~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ExpressibleByArgument.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArguments.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableArguments.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableArguments~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableArguments.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArgumentsValidation.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableArgumentsValidation.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableArgumentsValidation~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableArgumentsValidation.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableCommand.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableCommand.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableCommand~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsableCommand.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentDecoder.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentDecoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentDecoder.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentDefinition.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentDefinition~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentDefinition.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentSet.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentSet~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ArgumentSet.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandParser.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CommandParser.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputKey.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/InputKey.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/InputKey~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/InputKey.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/InputOrigin.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/InputOrigin~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/InputOrigin.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Name.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Name~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Name.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Parsed.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Parsed~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Parsed.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsedValues.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsedValues~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParsedValues.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParserError.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParserError~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/ParserError.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/SplitArguments.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/SplitArguments~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/SplitArguments.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/DumpHelpGenerator.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/DumpHelpGenerator.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/DumpHelpGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/DumpHelpGenerator.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/HelpCommand.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/HelpCommand~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/HelpCommand.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/HelpGenerator.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/HelpGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/HelpGenerator.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/MessageInfo.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/MessageInfo~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/MessageInfo.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/UsageGenerator.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/UsageGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/UsageGenerator.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/CollectionExtensions.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CollectionExtensions.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CollectionExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/CollectionExtensions.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Platform.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Platform.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Platform~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Platform.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/SequenceExtensions.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/SequenceExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/SequenceExtensions.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/StringExtensions.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/StringExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/StringExtensions.swiftdeps"
+  },
+  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift": {
+    "object": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Tree.swift.o",
+    "swiftmodule": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Tree~partial.swiftmodule",
+    "swift-dependencies": "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/ArgumentParser.build/Tree.swiftdeps"
+  }
+}
