@@ -1,6 +1,0 @@
-version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
-options: "5cb071afddba84a8fcc080a696d23f38580ceca1a1ae2c15783337673d175d34"
-build_start_time: [1744824831, 446686000]
-build_end_time: [1744824834, 287658000]
-inputs:
-  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/checkouts/PathKit/Sources/PathKit.swift": [1744824826, 84080772]

@@ -1,4 +1,0 @@
-module XcodeProj {
-    header "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/XcodeProj.build/XcodeProj-Swift.h"
-    requires objc
-}

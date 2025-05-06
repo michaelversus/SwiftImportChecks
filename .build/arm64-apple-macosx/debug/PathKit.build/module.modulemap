@@ -1,4 +1,0 @@
-module PathKit {
-    header "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/PathKit.build/PathKit-Swift.h"
-    requires objc
-}

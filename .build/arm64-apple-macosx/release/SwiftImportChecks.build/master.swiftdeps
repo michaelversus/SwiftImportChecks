@@ -1,7 +1,0 @@
-version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
-options: "64c45c0ce1f0b45e81e93e3b013b54592c7e15ba9cccc228995c4373a6ea7248"
-build_start_time: [1744824852, 837885000]
-build_end_time: [1744824855, 17239000]
-inputs:
-  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/Sources/SwiftImportChecks.swift": [1744824696, 121005113]
-  "/Users/m.karagiorgos/Desktop/SwiftImportChecks/Sources/XcodeProjectParser.swift": [1744824668, 547109373]

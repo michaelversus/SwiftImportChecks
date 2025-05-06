@@ -1,4 +1,0 @@
-module _SwiftSyntaxMacros {
-    header "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/_SwiftSyntaxMacros.build/_SwiftSyntaxMacros-Swift.h"
-    requires objc
-}

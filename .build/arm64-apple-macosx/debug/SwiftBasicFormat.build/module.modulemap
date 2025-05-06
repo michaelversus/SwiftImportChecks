@@ -1,4 +1,0 @@
-module SwiftBasicFormat {
-    header "/Users/m.karagiorgos/SwiftImportChecks/.build/arm64-apple-macosx/debug/SwiftBasicFormat.build/SwiftBasicFormat-Swift.h"
-    requires objc
-}

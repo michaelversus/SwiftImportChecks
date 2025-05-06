@@ -1,4 +1,0 @@
-module Spectre {
-    header "/Users/m.karagiorgos/Desktop/SwiftImportChecks/.build/arm64-apple-macosx/release/Spectre.build/Spectre-Swift.h"
-    requires objc
-}
