@@ -36,7 +36,7 @@ struct CompositionRoot {
         verbose: Bool = false
     ) {
         self.configurationPath = configurationPath
-        self.rootPath = rootPath
+        self.rootPath = rootPath ?? fileManager.currentDirectoryPath
         self.projectFileName = projectFileName
         self.spmPackagesPath = spmPackagesPath
         self.targetName = targetName
