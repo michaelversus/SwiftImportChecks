@@ -20,6 +20,10 @@ enum PackagesParser {
         while let file = enumerator?.nextObject() as? String {
             if file.hasSuffix("Package.swift") {
                 let fullPath = path + "/" + file
+                let components = fullPath.split(separator: "/").map(String.init)
+                let excludedPaths = Set(configs.excludedPaths)
+                let componentsSet = Set(components)
+                guard excludedPaths.intersection(componentsSet).isEmpty else { continue }
                 let package = try parsePackageSwift(at: fullPath)
                 guard !configs.excludedPackages.contains(package.name) else { continue }
                 let targets = mapFileToTargets(file: package)
