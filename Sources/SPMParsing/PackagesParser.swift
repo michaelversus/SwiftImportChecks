@@ -5,6 +5,8 @@
 //  Created by Michalis Karagiorgos on 25/4/25.
 //
 import Foundation
+import SwiftSyntax
+import SwiftSyntaxParser
 
 enum PackagesParser {
 
@@ -26,7 +28,7 @@ enum PackagesParser {
                 guard excludedPaths.intersection(componentsSet).isEmpty else { continue }
                 let package = try parsePackageSwift(at: fullPath)
                 guard !configs.excludedPackages.contains(package.name) else { continue }
-                let targets = mapFileToTargets(file: package)
+                let targets = package.targets
                 for target in targets {
                     let config = configs.configurations[target.name] ?? .default
                     print("Package: \(package.name) Target: \(target.name) - Type: \(target.type.rawValue)")
@@ -42,7 +44,6 @@ enum PackagesParser {
                     )
                     let results = try swiftFilesParser.parseSwiftFiles(config: config, globalExcludedPaths: configs.excludedPaths)
                     let imports = results.processedImports(config: config)
-                    debugPrint("Imports for target \(target.name):\n")
                     if verbose {
                         print("Imports for target \(target.name):\n")
                         for importName in imports {
@@ -66,25 +67,26 @@ enum PackagesParser {
         }
     }
 
-    static func mapFileToTargets(file: SwiftPackageFile) -> [SwiftPackageTarget] {
-        file.targets.map { target in
-            SwiftPackageTarget(
-                name: target.name,
-                type: target.type,
-                dependencies: Set(target.dependencies.compactMap { $0.name() })
-            )
-        }
-    }
-
     static func parsePackageSwift(at path: String) throws -> SwiftPackageFile {
-        let url = URL(fileURLWithPath: path)
-        let output =  try ShellHandler.shell("swift package --package-path \(url.deletingLastPathComponent().path) dump-package")
-        guard let data = output?.data(using: .utf8) else {
-            throw CommandFlowError.shellOutputNil
+        let sourceFile = try SyntaxParser.parse(URL(fileURLWithPath: path))
+        let visitor = PackageSwiftFileVisitor(viewMode: .fixedUp)
+        visitor.walk(sourceFile)
+        guard let packageName = visitor.packageName else {
+            throw Error.failedToParsePackage(path: path)
         }
-        print("Parsing Package.swift at path: \(path)")
-        let decoder = JSONDecoder()
-        let package = try decoder.decode(SwiftPackageFile.self, from: data)
-        return package
+        return SwiftPackageFile(name: packageName, targets: visitor.targets)
+    }
+}
+
+extension PackagesParser {
+    enum Error: Swift.Error, CustomStringConvertible {
+        case failedToParsePackage(path: String)
+
+        var description: String {
+            switch self {
+            case .failedToParsePackage(let path):
+                return "Failed to parse Package.swift at path: \(path)"
+            }
+        }
     }
 }
