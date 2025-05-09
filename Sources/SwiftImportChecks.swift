@@ -19,7 +19,7 @@ struct SwiftImportChecks: ParsableCommand {
     var targetName: String?
 
     @Option(name: .shortAndLong, help: "Flag to enable verbose output.")
-    var verbose: Bool = false
+    var verbose: Bool
 
     func run() throws {
         let compositionRoot = CompositionRoot(
