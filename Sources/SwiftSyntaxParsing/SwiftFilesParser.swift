@@ -12,17 +12,20 @@ struct SwiftFilesParser {
     let target: Target?
     let packageTargetName: String?
     let verbose: Bool
+    let echo: (String) -> Void
 
     init(
         rootURL: URL,
         target: Target? = nil,
         packageTargetName: String? = nil,
-        verbose: Bool
+        verbose: Bool,
+        echo: @escaping (String) -> Void = { msg in print(msg) }
     ) {
         self.rootURL = rootURL
         self.target = target
         self.packageTargetName = packageTargetName
         self.verbose = verbose
+        self.echo = echo
     }
 
     func parseSwiftFiles(config: Configuration, globalExcludedPaths: [String]) throws -> Results {
@@ -30,10 +33,10 @@ struct SwiftFilesParser {
             excludedPaths: config.excludedPath(path: rootURL.path),
             globalExludedPaths: globalExcludedPaths
         )
-        print("🎯 Target: \(target?.name ?? packageTargetName ?? "unknown") linked files count: \(files.count)")
+        echo("🎯 Target: \(target?.name ?? packageTargetName ?? "unknown") linked files count: \(files.count)")
         let (parsedFiles, _) = try parse(files: files)
         if verbose {
-            print("🎯 Target: \(target?.name ?? packageTargetName ?? "unknown") parsed files count: \(parsedFiles.count)")
+            echo("🎯 Target: \(target?.name ?? packageTargetName ?? "unknown") parsed files count: \(parsedFiles.count)")
         }
         let results = try collate(parsedFiles)
         return results
@@ -92,6 +95,21 @@ struct SwiftFilesParser {
             }
         }
         return results
+    }
+
+    private func forbiddenImportsValidation(
+        config: Configuration,
+        file: SwiftFile
+    ) throws {
+        let forbiddenImports = file.results.imports.compactMap { importString -> String? in
+            let strippedImport = importString.removingCommentsWhitespaceAndDotSuffix()
+            guard config.forbiddenImports.contains(strippedImport) else { return nil }
+            echo("🚫 Target: \(packageTargetName ?? target?.name ?? "-") contains forbidden import: \(strippedImport) at: \(file.url?.relativePath ?? "-")")
+            return strippedImport
+        }
+        if !forbiddenImports.isEmpty {
+            throw ConfigError.forbiddenImportsFound
+        }
     }
 }
 
