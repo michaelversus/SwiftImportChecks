@@ -67,26 +67,32 @@ extension Configurations {
 struct Configuration: Codable, Equatable {
     private let excluded: [String]
     let excludedImports: [String]
+    let forbiddenImports: [String]
 
     init(
         excluded: [String] = [],
-        excludedImports: [String] = []
+        excludedImports: [String] = [],
+        forbiddenImports: [String] = []
     ) {
         self.excluded = excluded
         self.excludedImports = excludedImports
+        self.forbiddenImports = forbiddenImports
     }
 
     enum CodingKeys: CodingKey {
         case excluded
         case excludedImports
+        case forbiddenImports
     }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         let excluded = try? values.decode([String].self, forKey: .excluded)
         let excludedImports = try? values.decode([String].self, forKey: .excludedImports)
+        let forbiddenImports = try? values.decode([String].self, forKey: .forbiddenImports)
         self.excluded = excluded ?? []
         self.excludedImports = excludedImports ?? []
+        self.forbiddenImports = forbiddenImports ?? []
     }
 
     func excludedPath(path: String) -> [String] {
@@ -97,8 +103,5 @@ struct Configuration: Codable, Equatable {
 }
 
 extension Configuration {
-    static let `default`: Configuration = .init(
-        excluded: [],
-        excludedImports: []
-    )
+    static let `default` = Configuration()
 }
