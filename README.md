@@ -5,7 +5,7 @@
 
 # 📦 SwiftImportChecks
 
-This is a tool that enforces only explicitly declared dependencies are imported.
+This is a tool that enforces only explicitly declared dependencies are imported and also can enforce extra rules for forbidden import statements per target.
 Swift build provides the `--explicit-target-dependency-import-check` flag but unfortunatelly it is not available with `xcodebuild`.
 
 ## 💡 Suggestion
@@ -37,6 +37,7 @@ For example, if you need to:
 - exclude package `SomePackage` from scanning
 - exclude `someInternalPath` only for `SICDemoApp` target from scanning
 - exclude `SomeImport` import statements only for `SICDemoApp` target from scanning
+- throw error when scan finds `STLT` import statement only for `SICDemoApp` target
 ```yaml
 configurations:
   SICDemoApp:
@@ -44,6 +45,8 @@ configurations:
       - someInternalPath
     excludedImports:
         - SomeImport
+    forbiddenImports:
+        - STLT
 excludedPaths:
     - .build
     - .github
