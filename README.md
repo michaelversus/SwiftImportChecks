@@ -15,9 +15,9 @@ Swift build provides the `--explicit-target-dependency-import-check` flag but un
 ## 🛠️ Instalation
 
 - Remove existing tap if present (ignore this if you never tapped michaelversus/formulae before):
-`brew untap michaelversus/formulae`
+`brew untap michaelversus/swiftimportchecks https://github.com/michaelversus/SwiftImportChecks`
 - Add tap again
-`brew tap michaelversus/formulae`
+`brew tap michaelversus/swiftimportchecks https://github.com/michaelversus/SwiftImportChecks`
 - Install
 `brew install michaelversus/formulae/swiftimportchecks`
 
