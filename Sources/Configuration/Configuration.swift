@@ -13,17 +13,20 @@ struct Configurations: Codable, Equatable {
     let excludedPaths: [String]
     let excludedTargets: [String]
     let excludedPackages: [String]
+    let diagrams: DiagramsConfiguration?
 
     init(
         configurations: [String: Configuration] = [:],
         excludedTargets: [String] = [],
         excludedPaths: [String] = [],
-        excludedPackages: [String] = []
+        excludedPackages: [String] = [],
+        diagrams: DiagramsConfiguration? = nil
     ) {
         self.configurations = configurations
         self.excludedTargets = excludedTargets
         self.excludedPaths = excludedPaths
         self.excludedPackages = excludedPackages
+        self.diagrams = diagrams
     }
 
     private enum CodingKeys: CodingKey {
@@ -31,6 +34,7 @@ struct Configurations: Codable, Equatable {
         case excludedPaths
         case excludedPackages
         case excludedTargets
+        case diagrams
     }
 
     init(from decoder: any Decoder) throws {
@@ -39,6 +43,7 @@ struct Configurations: Codable, Equatable {
         let excludedTargets = try? container.decode([String].self, forKey: .excludedTargets)
         let excludedPackages = try? container.decode([String].self, forKey: .excludedPackages)
         let excludedPaths = try? container.decode([String].self, forKey: .excludedPaths)
+        self.diagrams = try? container.decode(DiagramsConfiguration.self, forKey: .diagrams)
         self.excludedTargets = excludedTargets ?? []
         self.excludedPackages = excludedPackages ?? []
         self.excludedPaths = excludedPaths ?? []
@@ -106,33 +111,43 @@ extension Configuration {
 }
 
 struct DiagramsConfiguration: Codable, Equatable {
-    let enabled: Bool
-    let excluded: [String]
-    let columns: Int
+    let regular: DiagramConfiguration?
+    let test: DiagramConfiguration?
 
     private enum CodingKeys: CodingKey {
-        case enabled
-        case excluded
-        case columns
+        case regular
+        case test
     }
 
     init(
-        enabled: Bool = false,
-        excluded: [String] = [],
-        columns: Int = 4
+        regular: DiagramConfiguration? = nil,
+        test: DiagramConfiguration? = nil
     ) {
-        self.enabled = enabled
-        self.excluded = excluded
-        self.columns = columns
+        self.regular = regular
+        self.test = test
     }
 
-    init(from decoder: any Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        let enabled = try? container.decode(Bool.self, forKey: .enabled)
-        let excluded = try? container.decode([String].self, forKey: .excluded)
-        let columns = try? container.decode(Int.self, forKey: .columns)
-        self.enabled = enabled ?? false
-        self.excluded = excluded ?? []
-        self.columns = columns ?? 4
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        self.regular = try? values.decode(DiagramConfiguration.self, forKey: .regular)
+        self.test = try? values.decode(DiagramConfiguration.self, forKey: .test)
+    }
+}
+
+struct DiagramConfiguration: Codable, Equatable {
+    let layers: [String]
+
+    private enum CodingKeys: CodingKey {
+        case layers
+    }
+
+    init(layers: [String] = []) {
+        self.layers = layers
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        let layers = try? values.decode([String].self, forKey: .layers)
+        self.layers = layers ?? []
     }
 }
