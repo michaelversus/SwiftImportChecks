@@ -38,7 +38,7 @@ struct SwiftFilesParser {
         if verbose {
             echo("🎯 Target: \(target?.name ?? packageTargetName ?? "unknown") parsed files count: \(parsedFiles.count)")
         }
-        let results = try collate(parsedFiles)
+        let results = try collate(parsedFiles, config: config)
         return results
     }
 
@@ -86,9 +86,13 @@ struct SwiftFilesParser {
         return (parsedFiles, failures)
     }
 
-    public func collate(_ scannedFiles: [SwiftFile]) throws -> Results {
+    public func collate(
+        _ scannedFiles: [SwiftFile],
+        config: Configuration
+    ) throws -> Results {
         let results = Results(files: scannedFiles)
         for file in scannedFiles {
+            try forbiddenImportsValidation(config: config, file: file)
             let fileImports = file.results.imports.filter{ !SystemImports.all.contains($0) }
             if !fileImports.isEmpty {
                 results.imports.addObjects(from: fileImports)
