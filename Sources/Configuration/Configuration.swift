@@ -26,7 +26,7 @@ struct Configurations: Codable, Equatable {
         self.excludedPackages = excludedPackages
     }
 
-    enum CodingKeys: CodingKey {
+    private enum CodingKeys: CodingKey {
         case configurations
         case excludedPaths
         case excludedPackages
@@ -63,7 +63,6 @@ extension Configurations {
     }
 }
 
-
 struct Configuration: Codable, Equatable {
     private let excluded: [String]
     let excludedImports: [String]
@@ -79,7 +78,7 @@ struct Configuration: Codable, Equatable {
         self.forbiddenImports = forbiddenImports
     }
 
-    enum CodingKeys: CodingKey {
+    private enum CodingKeys: CodingKey {
         case excluded
         case excludedImports
         case forbiddenImports
@@ -104,4 +103,36 @@ struct Configuration: Codable, Equatable {
 
 extension Configuration {
     static let `default` = Configuration()
+}
+
+struct DiagramsConfiguration: Codable, Equatable {
+    let enabled: Bool
+    let excluded: [String]
+    let columns: Int
+
+    private enum CodingKeys: CodingKey {
+        case enabled
+        case excluded
+        case columns
+    }
+
+    init(
+        enabled: Bool = false,
+        excluded: [String] = [],
+        columns: Int = 4
+    ) {
+        self.enabled = enabled
+        self.excluded = excluded
+        self.columns = columns
+    }
+
+    init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let enabled = try? container.decode(Bool.self, forKey: .enabled)
+        let excluded = try? container.decode([String].self, forKey: .excluded)
+        let columns = try? container.decode(Int.self, forKey: .columns)
+        self.enabled = enabled ?? false
+        self.excluded = excluded ?? []
+        self.columns = columns ?? 4
+    }
 }
