@@ -111,7 +111,8 @@ let package = Package(
 ```
 The above example will create a diagram like this one inside the local packages directory:
 ![example_diagram](https://github.com/user-attachments/assets/b8371512-c1d7-4417-a434-f6afc9067afc)
-[Diagram source code](./packages.hmtl)
+
+[Diagram source code](packages.hmtl)
 
 ## Credits
 SwiftImportChecks is built on top of 
