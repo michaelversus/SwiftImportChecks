@@ -11,10 +11,10 @@ protocol DiagramBuilderProtocol {
 }
 
 final class DiagramBuilder: DiagramBuilderProtocol {
-    let packagesPath: String
-    var packages: [SwiftPackageFile]
-    let configs: Configurations
-    let echo: (String) -> Void
+    private let packagesPath: String
+    private var packages: [SwiftPackageFile]
+    private let configs: Configurations
+    private let echo: (String) -> Void
 
     init(
         packagesPath: String,
@@ -37,13 +37,12 @@ final class DiagramBuilder: DiagramBuilderProtocol {
             !packages.isEmpty,
             let diagrams = configs.diagrams
         else { return }
-        if let regularLayers = diagrams.regular?.layers {
+        if let regularLayers = diagrams.regular?.layers, !regularLayers.isEmpty {
             generateRegularDiagram(layers: regularLayers)
         }
     }
 
     private func generateRegularDiagram(layers: [String]) {
-        guard !layers.isEmpty else { return }
         let regularTargetsSorted = packages
             .flatMap { $0.targets }
             .filter { $0.type == .regular && $0.layerNumber != nil }
