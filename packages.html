@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <pre class="mermaid" align="center">
+      architecture-beta
+        group foundation(vscode-icons:file-type-swift)[Foundation]
+        junction _foundation in foundation
+        group framework(vscode-icons:file-type-swift)[Framework]
+        junction _framework in framework
+        %% Foundation
+        service examplemodule(vscode-icons:file-type-package)[ExampleModule] in foundation
+        %% Framework
+        service othermodule(vscode-icons:file-type-package)[OtherModule] in framework
+        _framework:B -- T:_foundation
+    </pre>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+      mermaid.registerIconPacks([
+        {
+          name: 'vscode-icons',
+          loader: () =>
+            fetch('https://unpkg.com/@iconify-json/vscode-icons@1.2.20/icons.json').then((res) => res.json()),
+        },
+      ]);
+    </script>
+  </body>
+</html>

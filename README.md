@@ -5,7 +5,7 @@
 
 # 📦 SwiftImportChecks
 
-This is a tool that enforces only explicitly declared dependencies are imported and also can enforce extra rules for forbidden import statements per target.
+This is a tool that enforces only explicitly declared dependencies are imported and also can enforce extra rules for forbidden import statements per target. You can also create a nice mermaid diagram for your local packages adding some extra config properties.
 Swift build provides the `--explicit-target-dependency-import-check` flag but unfortunatelly it is not available with `xcodebuild`.
 
 ## 💡 Suggestion
@@ -38,6 +38,7 @@ For example, if you need to:
 - exclude `someInternalPath` only for `SICDemoApp` target from scanning
 - exclude `SomeImport` import statements only for `SICDemoApp` target from scanning
 - throw error when scan finds `STLT` import statement only for `SICDemoApp` target
+- create a mermaid diagram for all your local packages
 ```yaml
 configurations:
   SICDemoApp:
@@ -54,12 +55,59 @@ excludedTargets:
     - SomeTarget
 excludedPackages:
     - SomePackage
+diagrams:
+    regular:
+        layers:
+            - Foundation
+            - Framework
 ```
 
 ## 🚀 Usage
 ```bash
 swiftimportchecks -c ./.sic.yml -p MyProject.xcodeproj -s Packages
 ```
+
+## Diagrams guide
+SwiftImportChecks can generate a mermaid diagram for your local packages if you follow the below steps:
+- Add the `diagrams` property in your .sic.yml file like demonstrated above with the `regular` property and some layers ordered from bottom to top.
+- You need to add comments at the top of your local package files like this:
+```swift
+// swift-tools-version: 6.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+// this comment will add ExampleModule inside the Foundation layer
+// swiftimportchecks:0:ExampleModule
+import PackageDescription
+
+let package = Package(
+    name: "ExamplePackage",
+    dependencies: [
+        .package(url: "https://github.com/jpsim/Yams.git", from: "5.0.0")
+    ],
+    targets: [
+        .target(name: "ExampleModule", dependencies: ["Yams"]),
+    ]
+)
+```
+```swift
+// swift-tools-version: 6.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+// this comment will add ExampleModule inside the Framework layer
+// swiftimportchecks:1:ExampleModule
+import PackageDescription
+
+let package = Package(
+    name: "OtherPackage",
+    dependencies: [
+        .package(url: "https://github.com/jpsim/Yams.git", from: "5.0.0")
+    ],
+    targets: [
+        .target(name: "OtherModule", dependencies: ["Yams"]),
+    ]
+)
+```
+The above example will create a diagram like this one inside the local packages directory:
+[Example Diagram](./example_diagram.png)
+[Diagram source code](./packages.hmtl)
 
 ## Credits
 SwiftImportChecks is built on top of 
