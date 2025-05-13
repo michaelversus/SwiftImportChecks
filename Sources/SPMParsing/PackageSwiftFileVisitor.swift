@@ -11,6 +11,24 @@ import SwiftSyntax
 final class PackageSwiftFileVisitor: SyntaxVisitor {
     var packageName: String?
     var targets: [SwiftPackageTarget] = []
+    var layers: [String: Int] = [:]
+
+    override func visit(_ node: SourceFileSyntax) -> SyntaxVisitorContinueKind {
+        guard let leadingTrivia = node.leadingTrivia else { return .visitChildren }
+        for piece in leadingTrivia {
+            if case let .lineComment(comment) = piece {
+                if comment.contains("swift-import-checks") {
+                    let components = comment.components(separatedBy: ":")
+                    if components.count > 2 {
+                        let layerNumber = components[1].trimmingCharacters(in: .whitespacesAndNewlines)
+                        let targetName = components[2].trimmingCharacters(in: .whitespacesAndNewlines)
+                        layers[targetName] = Int(layerNumber)
+                    }
+                }
+            }
+        }
+        return .visitChildren
+    }
 
     override func visit(_ node: FunctionCallExprSyntax) -> SyntaxVisitorContinueKind {
         guard
@@ -52,11 +70,11 @@ final class PackageSwiftFileVisitor: SyntaxVisitor {
                 }
                 return nil
             } ?? []
-
             let target = SwiftPackageTarget(
                 name: targetName,
                 type: targetType,
-                dependencies: Set(dependencies)
+                dependencies: Set(dependencies),
+                layerNumber: layers[targetName]
             )
             targets.append(target)
         }

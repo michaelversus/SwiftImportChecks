@@ -8,10 +8,19 @@ import Foundation
 import SwiftSyntax
 import SwiftSyntaxParser
 
-enum PackagesParser {
+final class PackagesParser {
+    let path: String
+    let diagramBuilder: any DiagramBuilderProtocol
 
-    static func parsePackages(
-        at path: String,
+    init(
+        path: String,
+        diagramBuilder: any DiagramBuilderProtocol
+    ) {
+        self.path = path
+        self.diagramBuilder = diagramBuilder
+    }
+
+    func parsePackages(
         configs: Configurations,
         verbose: Bool,
         print: @escaping (String) -> Void = { msg in print(msg) }
@@ -28,12 +37,12 @@ enum PackagesParser {
                 guard excludedPaths.intersection(componentsSet).isEmpty else { continue }
                 let package = try parsePackageSwift(at: fullPath)
                 guard !configs.excludedPackages.contains(package.name) else { continue }
+                diagramBuilder.append(package: package)
                 let targets = package.targets
                 for target in targets {
                     let config = configs.configurations[target.name] ?? .default
                     print("Package: \(package.name) Target: \(target.name) - Type: \(target.type.rawValue)")
                     var swiftFilesPath = path + "/" + package.name + target.type.intermediatePath + target.name
-                    debugPrint(swiftFilesPath)
                     if !FileManager.default.fileExists(atPath: swiftFilesPath) {
                         swiftFilesPath = path + "/" + package.name + target.type.intermediatePath
                     }
@@ -65,9 +74,10 @@ enum PackagesParser {
                 }
             }
         }
+        diagramBuilder.generateDiagram()
     }
 
-    static func parsePackageSwift(at path: String) throws -> SwiftPackageFile {
+    private func parsePackageSwift(at path: String) throws -> SwiftPackageFile {
         let sourceFile = try SyntaxParser.parse(URL(fileURLWithPath: path))
         let visitor = PackageSwiftFileVisitor(viewMode: .fixedUp)
         visitor.walk(sourceFile)
