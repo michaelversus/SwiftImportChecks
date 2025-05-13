@@ -19,7 +19,7 @@ Swift build provides the `--explicit-target-dependency-import-check` flag but un
 - Add tap again
 `brew tap michaelversus/swiftimportchecks https://github.com/michaelversus/SwiftImportChecks`
 - Install
-`brew install michaelversus/formulae/swiftimportchecks`
+`brew install swiftimportchecks`
 
 ## ⚙️ Command line flags
 - `-c` lets you specify a path to your .sic.yml configuration file, if you have one
