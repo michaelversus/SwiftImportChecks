@@ -13,16 +13,17 @@ import Testing
 struct PackagesParserTests {
     let configs = Configurations.default
     let verbose = false
+    let diagramBuilder = MockDiagramBuilder()
 
     @Test("test parsePackages given invalid path skips parsing")
     func parsePackagesGivenInvalidPath() throws {
         // Given
         let path: String = "invalidPath"
         var messages: [String] = []
+        let sut = makeSUT(path: path)
 
         // When
-        try PackagesParser.parsePackages(
-            at: path,
+        try sut.parsePackages(
             configs: configs,
             verbose: verbose,
             print: { messages.append($0) }
@@ -37,10 +38,10 @@ struct PackagesParserTests {
         // Given
         let path: String = URL.Mock.exampleDir.relativePath
         var messages: [String] = []
+        let sut = makeSUT(path: path)
 
         // When
-        try PackagesParser.parsePackages(
-            at: path,
+        try sut.parsePackages(
             configs: configs,
             verbose: verbose,
             print: { messages.append($0) }
@@ -58,10 +59,10 @@ struct PackagesParserTests {
         let configs = Configurations(
             excludedPackages: ["SwiftImportChecks"]
         )
+        let sut = makeSUT(path: path)
 
         // When
-        try PackagesParser.parsePackages(
-            at: path,
+        try sut.parsePackages(
             configs: configs,
             verbose: verbose,
             print: { messages.append($0) }
@@ -80,10 +81,10 @@ struct PackagesParserTests {
             "Package: SwiftImportChecks Target: SwiftImportChecks - Type: regular",
             "✅ All imports for target SwiftImportChecks are explicit"
         ]
+        let sut = makeSUT(path: path)
 
         // When
-        try PackagesParser.parsePackages(
-            at: path,
+        try sut.parsePackages(
             configs: configs,
             verbose: verbose,
             print: { messages.append($0) }
@@ -104,13 +105,13 @@ struct PackagesParserTests {
         var expectedDescription = "❌ Target FailureModule contains implicit dependencies:\n"
         expectedDescription += "- ❌ Alamofire\n"
         expectedDescription += "- ❌ SwiftImportChecks\n"
+        let sut = makeSUT(path: path)
 
         // When, Then
         #expect(
             throws: ImplicitDependenciesError(description: expectedDescription),
             performing: {
-                try PackagesParser.parsePackages(
-                    at: path,
+                try sut.parsePackages(
                     configs: configs,
                     verbose: verbose,
                     print: { messages.append($0) }
@@ -118,6 +119,15 @@ struct PackagesParserTests {
             }
         )
         #expect(messages == expectedMessages)
+    }
+}
+
+extension PackagesParserTests {
+    func makeSUT(path: String) -> PackagesParser {
+        PackagesParser(
+            path: path,
+            diagramBuilder: diagramBuilder
+        )
     }
 }
 
