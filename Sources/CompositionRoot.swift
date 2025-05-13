@@ -67,8 +67,14 @@ struct CompositionRoot {
         packagesPath: String
     ) throws {
         let packagesFullPath = root + packagesPath
-        try PackagesParser.parsePackages(
-            at: packagesFullPath,
+        let parser = PackagesParser(
+            path: packagesFullPath,
+            diagramBuilder: DiagramBuilder(
+                packagesPath: packagesFullPath,
+                configs: configs
+            )
+        )
+        try parser.parsePackages(
             configs: configs,
             verbose: verbose
         )
