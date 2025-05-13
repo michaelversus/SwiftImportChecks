@@ -1,8 +1,8 @@
 class Swiftimportchecks < Formula
   desc "Swift implicit import checks for SPM packages and Xcodeproj"
   homepage "https://github.com/michaelversus/SwiftImportChecks"
-  url "https://github.com/michaelversus/SwiftImportChecks.git", tag: "0.1.8"
-  version "0.1.8"
+  url "https://github.com/michaelversus/SwiftImportChecks.git", tag: "0.1.9"
+  version "0.1.9"
 
   depends_on "xcode": [:build]
 
