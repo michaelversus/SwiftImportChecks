@@ -74,8 +74,10 @@ SwiftImportChecks can generate a mermaid diagram for your local packages if you 
 ```swift
 // swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
+
 // this comment will add ExampleModule inside the Foundation layer
 // swiftimportchecks:0:ExampleModule
+
 import PackageDescription
 
 let package = Package(
@@ -91,8 +93,10 @@ let package = Package(
 ```swift
 // swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
-// this comment will add ExampleModule inside the Framework layer
-// swiftimportchecks:1:ExampleModule
+
+// this comment will add OtherModule inside the Framework layer
+// swiftimportchecks:1:OtherModule
+
 import PackageDescription
 
 let package = Package(
