@@ -70,14 +70,27 @@ final class PackageSwiftFileVisitor: SyntaxVisitor {
                 }
                 return nil
             } ?? []
+            let dependenciesSet = Set(dependencies)
             let target = SwiftPackageTarget(
                 name: targetName,
                 type: targetType,
-                dependencies: Set(dependencies),
+                dependencies: dependenciesSet,
+                duplicateDependencies: findDuplicateDependencies(dependencies),
                 layerNumber: layers[targetName]
             )
             targets.append(target)
         }
         return .visitChildren
+    }
+
+    private func findDuplicateDependencies(_ dependencies: [String]) -> [String] {
+        var seen = Set<String>()
+        var duplicates = Set<String>()
+        for item in dependencies {
+            if !seen.insert(item).inserted {
+                duplicates.insert(item)
+            }
+        }
+        return Array(duplicates)
     }
 }

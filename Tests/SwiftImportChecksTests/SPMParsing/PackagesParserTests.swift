@@ -120,6 +120,30 @@ struct PackagesParserTests {
         )
         #expect(messages == expectedMessages)
     }
+
+    @Test("test parsePackages given valid path with valid Package name and duplicate dependencies throws error")
+    func parsePackagesGivenValidPathWithValidPackageNameAndDuplicateDependencies() throws {
+        // Given
+        let path: String = URL.Mock.duplicatesPackageFileDir.relativePath
+        var messages: [String] = []
+        let expectedMessages: [String] = [
+            "Package: SwiftImportChecks Target: SwiftImportChecks - Type: regular"
+        ]
+        let sut = makeSUT(path: path)
+
+        // When, Then
+        #expect(
+            throws: PackagesParser.Error.duplicateDependencies(targetName: "SwiftImportChecks", dependencies: ["SomeDependency"]),
+            performing: {
+                try sut.parsePackages(
+                    configs: configs,
+                    verbose: verbose,
+                    print: { messages.append($0) }
+                )
+            }
+        )
+        #expect(messages == expectedMessages)
+    }
 }
 
 extension PackagesParserTests {
@@ -136,6 +160,7 @@ private extension URL {
         static let exampleDir = Bundle.module.url(forResource: "Example/NoPackage/sic", withExtension: "yml")!.deletingLastPathComponent()
         static let packageFileDir = Bundle.module.url(forResource: "Example/Package/Package", withExtension: "swift")!.deletingLastPathComponent()
         static let secondPackageFileDir = Bundle.module.url(forResource: "Example/SecondPackage/Package", withExtension: "swift")!.deletingLastPathComponent()
+        static let duplicatesPackageFileDir = Bundle.module.url(forResource: "Example/DuplicatesPackage/Package", withExtension: "swift")!.deletingLastPathComponent()
         static let failurePackageFileDir = Bundle.module.url(forResource: "Example/FailurePackage/Package", withExtension: "swift")!.deletingLastPathComponent()
     }
 }

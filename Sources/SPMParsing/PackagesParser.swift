@@ -42,6 +42,9 @@ final class PackagesParser {
                 for target in targets {
                     let config = configs.configurations[target.name] ?? .default
                     print("Package: \(package.name) Target: \(target.name) - Type: \(target.type.rawValue)")
+                    guard target.duplicateDependencies.isEmpty else {
+                        throw PackagesParser.Error.duplicateDependencies(targetName: target.name, dependencies: target.duplicateDependencies)
+                    }
                     var swiftFilesPath = path + "/" + package.name + target.type.intermediatePath + target.name
                     if !FileManager.default.fileExists(atPath: swiftFilesPath) {
                         swiftFilesPath = path + "/" + package.name + target.type.intermediatePath
@@ -89,13 +92,16 @@ final class PackagesParser {
 }
 
 extension PackagesParser {
-    enum Error: Swift.Error, CustomStringConvertible {
+    enum Error: Swift.Error, CustomStringConvertible, Equatable {
         case failedToParsePackage(path: String)
+        case duplicateDependencies(targetName: String, dependencies: [String])
 
         var description: String {
             switch self {
             case .failedToParsePackage(let path):
-                return "Failed to parse Package.swift at path: \(path)"
+                "Failed to parse Package.swift at path: \(path)"
+            case .duplicateDependencies(let targetName, let dependencies):
+                "❌ Target \(targetName) has duplicate dependencies: \(dependencies.joined(separator: ", "))"
             }
         }
     }
