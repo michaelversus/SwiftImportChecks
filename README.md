@@ -5,8 +5,11 @@
 
 # 📦 SwiftImportChecks
 
-This is a tool that enforces only explicitly declared dependencies are imported and also can enforce extra rules for forbidden import statements per target. You can also create a nice mermaid diagram for your local packages adding some extra config properties.
-Swift build provides the `--explicit-target-dependency-import-check` flag but unfortunatelly it is not available with `xcodebuild`.
+This is a tool that:
+ - enforces only explicitly declared dependencies are imported. (Swift build provides the `--explicit-target-dependency-import-check` flag but unfortunatelly it is not available with `xcodebuild`.)
+ - enforces extra rules for forbidden import statements per target.
+ - throws errors when you have duplicate dependencies inside Package.swift files.
+ - Can create a nice mermaid diagram for your local packages adding some extra config properties.
 
 ## 💡 Suggestion
 

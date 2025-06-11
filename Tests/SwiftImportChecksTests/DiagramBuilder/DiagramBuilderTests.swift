@@ -136,6 +136,7 @@ struct DiagramBuilderTests {
                     name: "TestTarget",
                     type: .test,
                     dependencies: [],
+                    duplicateDependencies: [],
                     layerNumber: nil
                 )
             ]
@@ -171,6 +172,7 @@ struct DiagramBuilderTests {
                     name: "TestTarget",
                     type: .regular,
                     dependencies: [],
+                    duplicateDependencies: [],
                     layerNumber: nil
                 )
             ]
@@ -209,6 +211,7 @@ struct DiagramBuilderTests {
                     name: "TestTarget",
                     type: .regular,
                     dependencies: [],
+                    duplicateDependencies: [],
                     layerNumber: 0
                 )
             ]
