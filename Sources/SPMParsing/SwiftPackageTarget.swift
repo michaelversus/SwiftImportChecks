@@ -11,4 +11,5 @@ struct SwiftPackageTarget: Equatable {
     let dependencies: Set<String>
     let duplicateDependencies: [String]
     let layerNumber: Int?
+    let path: String?
 }

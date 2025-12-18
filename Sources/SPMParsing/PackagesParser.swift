@@ -45,9 +45,28 @@ final class PackagesParser {
                     guard target.duplicateDependencies.isEmpty else {
                         throw PackagesParser.Error.duplicateDependencies(targetName: target.name, dependencies: target.duplicateDependencies)
                     }
-                    var swiftFilesPath = path + "/" + package.name + target.type.intermediatePath + target.name
-                    if !FileManager.default.fileExists(atPath: swiftFilesPath) {
-                        swiftFilesPath = path + "/" + package.name + target.type.intermediatePath
+                    var swiftFilesPath: String
+                    if let customPath = target.path {
+                        // Normalize path: strip leading/trailing slashes to avoid double-slash issues
+                        let normalizedPath = customPath
+                            .trimmingCharacters(in: CharacterSet(charactersIn: "/"))
+                        // Use explicit path from Package.swift
+                        swiftFilesPath = path + "/" + package.name + "/" + normalizedPath
+                        // Error if custom path doesn't exist - don't silently scan nothing
+                        guard FileManager.default.fileExists(atPath: swiftFilesPath) else {
+                            throw PackagesParser.Error.customPathNotFound(
+                                targetName: target.name,
+                                path: customPath,
+                                resolvedPath: swiftFilesPath
+                            )
+                        }
+                    } else {
+                        // Fall back to convention: Sources/TargetName or Tests/TargetName
+                        swiftFilesPath = path + "/" + package.name + target.type.intermediatePath + target.name
+                        // Only fall back to parent directory if convention path doesn't exist
+                        if !FileManager.default.fileExists(atPath: swiftFilesPath) {
+                            swiftFilesPath = path + "/" + package.name + target.type.intermediatePath
+                        }
                     }
                     let swiftFilesParser = SwiftFilesParser(
                         rootURL: URL(fileURLWithPath: swiftFilesPath),
@@ -95,6 +114,7 @@ extension PackagesParser {
     enum Error: Swift.Error, CustomStringConvertible, Equatable {
         case failedToParsePackage(path: String)
         case duplicateDependencies(targetName: String, dependencies: [String])
+        case customPathNotFound(targetName: String, path: String, resolvedPath: String)
 
         var description: String {
             switch self {
@@ -102,6 +122,8 @@ extension PackagesParser {
                 "Failed to parse Package.swift at path: \(path)"
             case .duplicateDependencies(let targetName, let dependencies):
                 "❌ Target \(targetName) has duplicate dependencies: \(dependencies.joined(separator: ", "))"
+            case .customPathNotFound(let targetName, let path, let resolvedPath):
+                "❌ Target \(targetName) specifies path: \"\(path)\" but directory not found at: \(resolvedPath)"
             }
         }
     }
