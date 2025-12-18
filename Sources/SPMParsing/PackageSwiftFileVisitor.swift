@@ -55,6 +55,10 @@ final class PackageSwiftFileVisitor: SyntaxVisitor {
                 targetType = .regular
             }
 
+            let pathArgument = targetCall.argumentList.first(where: { $0.label?.text == "path" })?
+                .expression.as(StringLiteralExprSyntax.self)?.segments.description
+                .trimmingCharacters(in: .punctuationCharacters)
+
             let dependenciesArray = targetCall.argumentList.first(where: { $0.label?.text == "dependencies" })?.expression.as(ArrayExprSyntax.self)?.elements
             let dependencies = dependenciesArray?.compactMap { element -> String? in
                 if let stringLiteral = element.expression.as(StringLiteralExprSyntax.self) {
@@ -76,7 +80,8 @@ final class PackageSwiftFileVisitor: SyntaxVisitor {
                 type: targetType,
                 dependencies: dependenciesSet,
                 duplicateDependencies: findDuplicateDependencies(dependencies),
-                layerNumber: layers[targetName]
+                layerNumber: layers[targetName],
+                path: pathArgument
             )
             targets.append(target)
         }
