@@ -144,6 +144,63 @@ struct PackagesParserTests {
         )
         #expect(messages == expectedMessages)
     }
+
+    @Test("test parsePackages given valid path with custom path argument uses correct target path")
+    func parsePackagesGivenValidPathWithCustomPathArgument() throws {
+        // Given
+        // This test verifies that:
+        // 1. Files in Sources/Core are scanned for TestModule (has CoreDependency import)
+        // 2. Files in Sources/UI are NOT scanned (has UndeclaredDependency import that would fail)
+        // 3. Files in CustomTests are scanned for TestModuleTests (testTarget with custom path)
+        let path: String = URL.Mock.customPathPackageFileDir.relativePath
+        var messages: [String] = []
+        let expectedMessages: [String] = [
+            "Package: CustomPathPackage Target: TestModule - Type: regular",
+            "✅ All imports for target TestModule are explicit",
+            "Package: CustomPathPackage Target: TestModuleTests - Type: test",
+            "✅ All imports for target TestModuleTests are explicit"
+        ]
+        let sut = makeSUT(path: path)
+
+        // When
+        try sut.parsePackages(
+            configs: configs,
+            verbose: verbose,
+            print: { messages.append($0) }
+        )
+
+        // Then
+        // If Sources/UI was incorrectly scanned, this would fail with UndeclaredDependency error
+        #expect(messages == expectedMessages)
+    }
+
+    @Test("test parsePackages given custom path that does not exist throws error")
+    func parsePackagesGivenCustomPathNotFoundThrowsError() throws {
+        // Given
+        let path: String = URL.Mock.invalidCustomPathPackageFileDir.relativePath
+        var messages: [String] = []
+        let expectedMessages: [String] = [
+            "Package: InvalidPathPackage Target: MissingModule - Type: regular"
+        ]
+        let sut = makeSUT(path: path)
+
+        // When, Then
+        #expect(
+            throws: PackagesParser.Error.customPathNotFound(
+                targetName: "MissingModule",
+                path: "Sources/DoesNotExist",
+                resolvedPath: path + "/InvalidPathPackage/Sources/DoesNotExist"
+            ),
+            performing: {
+                try sut.parsePackages(
+                    configs: configs,
+                    verbose: verbose,
+                    print: { messages.append($0) }
+                )
+            }
+        )
+        #expect(messages == expectedMessages)
+    }
 }
 
 extension PackagesParserTests {
@@ -162,5 +219,7 @@ private extension URL {
         static let secondPackageFileDir = Bundle.module.url(forResource: "Example/SecondPackage/Package", withExtension: "swift")!.deletingLastPathComponent()
         static let duplicatesPackageFileDir = Bundle.module.url(forResource: "Example/DuplicatesPackage/Package", withExtension: "swift")!.deletingLastPathComponent()
         static let failurePackageFileDir = Bundle.module.url(forResource: "Example/FailurePackage/Package", withExtension: "swift")!.deletingLastPathComponent()
+        static let customPathPackageFileDir = Bundle.module.url(forResource: "Example/CustomPathPackage/Package", withExtension: "swift")!.deletingLastPathComponent()
+        static let invalidCustomPathPackageFileDir = Bundle.module.url(forResource: "Example/InvalidCustomPathPackage/Package", withExtension: "swift")!.deletingLastPathComponent()
     }
 }
