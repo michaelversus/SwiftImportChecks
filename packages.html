@@ -7,9 +7,7 @@
         group framework(vscode-icons:file-type-swift)[Framework]
         junction _framework in framework
         %% Foundation
-        service examplemodule(vscode-icons:file-type-package)[ExampleModule] in foundation
-        %% Framework
-        service othermodule(vscode-icons:file-type-package)[OtherModule] in framework
+        service testtarget(vscode-icons:file-type-package)[TestTarget] in foundation
         _framework:B -- T:_foundation
     </pre>
     <script type="module">
