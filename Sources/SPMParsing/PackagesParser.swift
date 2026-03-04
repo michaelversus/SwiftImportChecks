@@ -40,6 +40,9 @@ final class PackagesParser {
                 diagramBuilder.append(package: package)
                 let targets = package.targets
                 for target in targets {
+                    if configs.excludeAllSPMTestTargets && target.type == .test {
+                        continue
+                    }
                     let config = configs.configurations[target.name] ?? .default
                     print("Package: \(package.name) Target: \(target.name) - Type: \(target.type.rawValue)")
                     guard target.duplicateDependencies.isEmpty else {

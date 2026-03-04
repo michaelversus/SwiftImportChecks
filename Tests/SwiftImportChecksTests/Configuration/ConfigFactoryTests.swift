@@ -98,7 +98,8 @@ extension Configurations {
                 )
             ],
             excludedTargets: ["Tests"],
-            excludedPackages: ["PackageTest"]
+            excludedPackages: ["PackageTest"],
+            excludeAllSPMTestTargets: false
         )
     }
 }
