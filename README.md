@@ -36,6 +36,7 @@ For example, if you need to:
 - exclude `.build` and `.github` paths from scanning
 - exclude target `SomeTarget` from scanning
 - exclude package `SomePackage` from scanning
+- exclude all SPM test targets from scanning
 - exclude `someInternalPath` only for `SICDemoApp` target from scanning
 - exclude `SomeImport` import statements only for `SICDemoApp` target from scanning
 - throw error when scan finds `STLT` import statement only for `SICDemoApp` target
@@ -56,6 +57,7 @@ excludedTargets:
     - SomeTarget
 excludedPackages:
     - SomePackage
+excludeAllSPMTestTargets: false
 diagrams:
     regular:
         layers:

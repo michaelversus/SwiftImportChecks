@@ -13,6 +13,7 @@ struct Configurations: Codable, Equatable {
     let excludedPaths: [String]
     let excludedTargets: [String]
     let excludedPackages: [String]
+    let excludeAllSPMTestTargets: Bool
     let diagrams: DiagramsConfiguration?
 
     init(
@@ -20,12 +21,14 @@ struct Configurations: Codable, Equatable {
         excludedTargets: [String] = [],
         excludedPaths: [String] = [],
         excludedPackages: [String] = [],
+        excludeAllSPMTestTargets: Bool = false,
         diagrams: DiagramsConfiguration? = nil
     ) {
         self.configurations = configurations
         self.excludedTargets = excludedTargets
         self.excludedPaths = excludedPaths
         self.excludedPackages = excludedPackages
+        self.excludeAllSPMTestTargets = excludeAllSPMTestTargets
         self.diagrams = diagrams
     }
 
@@ -34,6 +37,7 @@ struct Configurations: Codable, Equatable {
         case excludedPaths
         case excludedPackages
         case excludedTargets
+        case excludeAllSPMTestTargets
         case diagrams
     }
 
@@ -43,10 +47,12 @@ struct Configurations: Codable, Equatable {
         let excludedTargets = try? container.decode([String].self, forKey: .excludedTargets)
         let excludedPackages = try? container.decode([String].self, forKey: .excludedPackages)
         let excludedPaths = try? container.decode([String].self, forKey: .excludedPaths)
+        let excludeAllSPMTestTargets = try? container.decode(Bool.self, forKey: .excludeAllSPMTestTargets)
         self.diagrams = try? container.decode(DiagramsConfiguration.self, forKey: .diagrams)
         self.excludedTargets = excludedTargets ?? []
         self.excludedPackages = excludedPackages ?? []
         self.excludedPaths = excludedPaths ?? []
+        self.excludeAllSPMTestTargets = excludeAllSPMTestTargets ?? false
         self.configurations = configurations ?? [:]
     }
 }
