@@ -10,7 +10,7 @@ import SwiftSyntaxParser
 
 struct SwiftFile {
     /// The swift file URL
-    let url: URL?
+    let url: URL
     /// The file visitor that scans the code
     var results: FileVisitor
 

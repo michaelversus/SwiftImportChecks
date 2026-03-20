@@ -93,7 +93,7 @@ struct SwiftFilesParser {
         let results = Results(files: scannedFiles)
         for file in scannedFiles {
             try forbiddenImportsValidation(config: config, file: file)
-            let fileImports = file.results.imports.filter{ !SystemImports.all.contains($0) }
+            let fileImports = file.results.imports.filter { !SystemImports.all.contains($0) }
             if !fileImports.isEmpty {
                 results.imports.addObjects(from: fileImports)
             }
@@ -108,7 +108,10 @@ struct SwiftFilesParser {
         let forbiddenImports = file.results.imports.compactMap { importString -> String? in
             let strippedImport = importString.removingCommentsWhitespaceAndDotSuffix()
             guard config.forbiddenImports.contains(strippedImport) else { return nil }
-            echo("🚫 Target: \(packageTargetName ?? target?.name ?? "-") contains forbidden import: \(strippedImport) at: \(file.url?.relativePath ?? "-")")
+            let targetLabel = packageTargetName ?? target?.name ?? "-"
+            echo(
+                "🚫 Target: \(targetLabel) contains forbidden import: \(strippedImport) at: \(file.url.relativePath)"
+            )
             return strippedImport
         }
         if !forbiddenImports.isEmpty {
@@ -116,4 +119,3 @@ struct SwiftFilesParser {
         }
     }
 }
-

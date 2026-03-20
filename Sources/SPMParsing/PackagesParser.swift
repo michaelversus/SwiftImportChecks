@@ -38,6 +38,8 @@ final class PackagesParser {
                 let package = try parsePackageSwift(at: fullPath)
                 guard !configs.excludedPackages.contains(package.name) else { continue }
                 diagramBuilder.append(package: package)
+                // Package root = directory containing Package.swift (SPM convention)
+                let packageRoot = (fullPath as NSString).deletingLastPathComponent
                 let targets = package.targets
                 for target in targets {
                     if configs.excludeAllSPMTestTargets && target.type == .test {
@@ -53,22 +55,33 @@ final class PackagesParser {
                         // Normalize path: strip leading/trailing slashes to avoid double-slash issues
                         let normalizedPath = customPath
                             .trimmingCharacters(in: CharacterSet(charactersIn: "/"))
-                        // Use explicit path from Package.swift
-                        swiftFilesPath = path + "/" + package.name + "/" + normalizedPath
-                        // Error if custom path doesn't exist - don't silently scan nothing
-                        guard FileManager.default.fileExists(atPath: swiftFilesPath) else {
+                        // Path in Package.swift is relative to package root (directory containing Package.swift)
+                        let primaryPath = packageRoot + "/" + normalizedPath
+                        // Fallback: some layouts nest content in packageName/ (e.g. test fixtures)
+                        if FileManager.default.fileExists(atPath: primaryPath) {
+                            swiftFilesPath = primaryPath
+                        } else if FileManager.default.fileExists(atPath: packageRoot + "/" + package.name + "/" + normalizedPath) {
+                            swiftFilesPath = packageRoot + "/" + package.name + "/" + normalizedPath
+                        } else {
                             throw PackagesParser.Error.customPathNotFound(
                                 targetName: target.name,
                                 path: customPath,
-                                resolvedPath: swiftFilesPath
+                                resolvedPath: primaryPath
                             )
                         }
                     } else {
                         // Fall back to convention: Sources/TargetName or Tests/TargetName
-                        swiftFilesPath = path + "/" + package.name + target.type.intermediatePath + target.name
+                        swiftFilesPath = packageRoot + target.type.intermediatePath + target.name
+                        // Fallback: try packageName/ subdirectory (nested layout)
+                        if !FileManager.default.fileExists(atPath: swiftFilesPath) {
+                            swiftFilesPath = packageRoot + "/" + package.name + target.type.intermediatePath + target.name
+                        }
                         // Only fall back to parent directory if convention path doesn't exist
                         if !FileManager.default.fileExists(atPath: swiftFilesPath) {
-                            swiftFilesPath = path + "/" + package.name + target.type.intermediatePath
+                            swiftFilesPath = packageRoot + target.type.intermediatePath
+                        }
+                        if !FileManager.default.fileExists(atPath: swiftFilesPath) {
+                            swiftFilesPath = packageRoot + "/" + package.name + target.type.intermediatePath
                         }
                     }
                     let swiftFilesParser = SwiftFilesParser(

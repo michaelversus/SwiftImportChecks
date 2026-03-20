@@ -45,11 +45,48 @@ struct CompositionRoot {
         self.verbose = verbose
     }
 
+    /// Test-only init that allows storing nil rootPath to exercise the root property's fallback.
+    init(
+        configurationPath: String? = nil,
+        rootPath: String?,
+        projectFileName: String? = nil,
+        spmPackagesPath: String? = nil,
+        targetName: String? = nil,
+        configFactory: ConfigFactoryProtocol.Type = ConfigFactory.self,
+        fileManager: FileManagerProtocol = FileManager.default,
+        verbose: Bool = false,
+        storeRootPathAsProvided: Bool
+    ) {
+        self.configurationPath = configurationPath
+        self.rootPath = storeRootPathAsProvided ? rootPath : (rootPath ?? fileManager.currentDirectoryPath)
+        self.projectFileName = projectFileName
+        self.spmPackagesPath = spmPackagesPath
+        self.targetName = targetName
+        self.configFactory = configFactory
+        self.fileManager = fileManager
+        self.verbose = verbose
+    }
+
     func run() throws {
         if projectFileName == nil && spmPackagesPath == nil {
             throw ConfigError.missingProjectAndPackagesPath
         }
-        let configs = try configFactory.make(at: configurationPath, fileManager: fileManager)
+        // Resolve config path relative to root so it works regardless of cwd
+        var resolvedConfigPath: String? = nil
+        if let configPath = configurationPath {
+            let p = configPath.hasPrefix("/") ? configPath : root + configPath
+            resolvedConfigPath = (p as NSString).standardizingPath
+        }
+        // Fallback: when config not found and scanning packages, try .sic.yml in packages parent (project root)
+        if let spmPackagesPath, !(resolvedConfigPath.map { fileManager.fileExists(atPath: $0) } ?? false) {
+            let packagesFullPath = root + spmPackagesPath
+            let projectRoot = (packagesFullPath as NSString).deletingLastPathComponent
+            let fallbackPath = (projectRoot + "/.sic.yml" as NSString).standardizingPath
+            if fileManager.fileExists(atPath: fallbackPath) {
+                resolvedConfigPath = fallbackPath
+            }
+        }
+        let configs = try configFactory.make(at: resolvedConfigPath, fileManager: fileManager)
         if let projectFileName {
             try projectFlow(
                 configs: configs,

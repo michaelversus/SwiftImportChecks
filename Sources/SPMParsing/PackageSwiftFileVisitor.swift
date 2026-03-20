@@ -46,12 +46,12 @@ final class PackageSwiftFileVisitor: SyntaxVisitor {
             else { continue }
 
             let targetType: SwiftPackageFile.TargetType
-            switch targetCall.calledExpression.description.trimmingCharacters(in: .whitespacesAndNewlines) {
-            case ".executableTarget":
-                targetType = .executable
-            case ".testTarget":
+            let calledExpr = targetCall.calledExpression.description.trimmingCharacters(in: .whitespacesAndNewlines)
+            if calledExpr.contains("testTarget") {
                 targetType = .test
-            default:
+            } else if calledExpr.contains("executableTarget") {
+                targetType = .executable
+            } else {
                 targetType = .regular
             }
 

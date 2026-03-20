@@ -22,9 +22,7 @@ enum ImplicitDependenciesErrorFactory {
                 .filter {
                     $0.results.imports.contains(diffImport)
                 }
-                .compactMap {
-                    $0.url
-                }
+                .map(\.url)
 
             description += verbose ? "- ❌ \(diffImport) imported at:\n" : "- ❌ \(diffImport)\n"
             if verbose {
